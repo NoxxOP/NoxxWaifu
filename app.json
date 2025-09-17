@@ -1,145 +1,98 @@
 {
-
-    "name": "lol",
-
-    "description": "A Telegram Waifu Catcher Bot, written in Python with Pyrogram and Py-Tgcalls.",
-
-    "logo": "https://telegra.ph/Aviax-02-24",
-
-    "keywords": [
-
+  "name": "WaifuCatcher",
+  "description": "A Telegram Waifu Catcher Bot, written in Python with Pyrogram and Py-Tgcalls.",
+  "logo": "https://telegra.ph/Aviax-02-24",
+  "keywords": [
     "python3",
-
     "telegram",
-
     "bot",
-
     "Noxx",
-
     "WaifuCatcher",
-
     "telegram-bot",
-
     "pyrogram"
-
-    ],
-
-    "env": {
-
-      "api_id": {
-
-        "description": "Get this value from https://my.telegram.org",
-
-        "value": "",
-
-        "required": true
-
-      },
-
-      "api_hash": {
-
-        "description": "Get this value from https://my.telegram.org",
-
-        "value": "",
-
-        "required": true
-
-      },
-
-      "TOKEN": {
-
-        "description": "A Bot's token from Botfather",
-
-        "value": "",
-
-        "required": true
-
-      },
-
-      "mongo_url": {
-
-        "description": "Get a mongodb url from https://cloud.mongodb.com.",
-
-        "value": "",
-
-        "required": true
-
-      },
-
-      "OWNER_ID": {
-
-        "description": "The user id of user whom you would like to add as OWNER.",
-
-        "value": "",
-
-        "required": true
-
-      },
-
-      "GROUP_ID": {
-
-        "description": "A Pyrogram v2 String Session from Replit.",
-
-        "value": "",
-
-        "required": true
-
-      },
-
-      "CHARA_CHANNEL_ID": {
-
-        "description": "Your Heroku account's API key",
-
-        "value": "",
-
-        "required": false
-
-      },
-
-      "HEROKU_APP_NAME": {
-
-        "description": "Your heroku app name",
-
-        "value": "",
-
-        "required": false
-
-      },
-
-      "LOG_GROUP_ID": {
-
-        "description": "Your Log Group ID, add your bot and promote as an admin with full rights!. Do not ever try to put channel ID here.",
-
-        "value": "",
-
-        "required": true
-
-      }
-
+  ],
+  "env": {
+    "API_ID": {
+      "description": "Get this value from https://my.telegram.org",
+      "value": "",
+      "required": true
     },
-
-    "buildpacks": [
-
-          {
-
-              "url": "heroku/python"
-
-          },
-
-          {
-
-              "url": "heroku/nodejs"
-
-          },
-
-          {
-
-              "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
-
-          }
-
-      ],
-
-      "stack": "container"
-
+    "API_HASH": {
+      "description": "Get this value from https://my.telegram.org",
+      "value": "",
+      "required": true
+    },
+    "TOKEN": {
+      "description": "A Bot's token from BotFather",
+      "value": "",
+      "required": true
+    },
+    "MONGO_URL": {
+      "description": "Get a MongoDB URL from https://cloud.mongodb.com.",
+      "value": "",
+      "required": true
+    },
+    "OWNER_ID": {
+      "description": "The user ID of the OWNER",
+      "value": "",
+      "required": true
+    },
+    "SUDO_USERS": {
+      "description": "Comma separated user IDs who will have sudo access",
+      "value": "",
+      "required": false
+    },
+    "GROUP_ID": {
+      "description": "Your group ID where bot will work",
+      "value": "",
+      "required": true
+    },
+    "CHARA_CHANNEL_ID": {
+      "description": "Channel ID where bot is admin",
+      "value": "",
+      "required": true
+    },
+    "PHOTO_URL": {
+      "description": "A single photo URL for bot",
+      "value": "",
+      "required": false
+    },
+    "SUPPORT_CHAT": {
+      "description": "Your support chat username without @",
+      "value": "",
+      "required": false
+    },
+    "UPDATE_CHAT": {
+      "description": "Update channel username without @",
+      "value": "",
+      "required": false
+    },
+    "BOT_USERNAME": {
+      "description": "Bot username without @",
+      "value": "",
+      "required": true
+    },
+    "HEROKU_APP_NAME": {
+      "description": "Your Heroku app name",
+      "value": "",
+      "required": false
+    },
+    "HEROKU_API_KEY": {
+      "description": "Your Heroku API key",
+      "value": "",
+      "required": false
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    },
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+    }
+  ],
+  "stack": "container"
 }
